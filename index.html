@@ -67,6 +67,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mobile-menu-bar d-block d-xl-none">
+                            <button class="tmp-round-action-btn open-mobile-menu">
+                                <i class="fa-solid fa-bars fa-2x"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,58 +79,29 @@
     </header>
     <!-- tpm-header-area end -->
 
-    <div class="d-block d-xl-none">
-        <div class="tmp-popup-mobile-menu">
-            <div class="inner">
-                <div class="header-top">
-                    <div class="close-menu">
-                        <button class="close-button tmp-round-action-btn">
-                            <i class="fa-sharp fa-light fa-xmark"></i>
-                        </button>
-                    </div>
+    <div class="tmp-popup-mobile-menu">
+        <div class="inner">
+            <div class="header-top">
+                <div class="close-menu">
+                    <button class="close-button tmp-round-action-btn">
+                        <i class="fa-solid fa-xmark fa-2x"></i>
+                    </button>
                 </div>
-                <ul class="tmp-mainmenu">
-                    <li>
-                        <a href="#home">Home
-                        </a>
-                      
-                    </li>
-                    <li>
-                        <a href="#about-Us">About</a>
-                    </li>
-                    <li>
-                        <a href="#resume-section">Experience & Education
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skill">Skill
-                        </a>
-                        
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#project">Project    
-                        </a>
-                        
-                    </li>
-                    <li>
-                        <a href="#contact-us">Contact</a>
-                    </li>
-                </ul>
-
-
-                <div class="social-wrapper mt--40">
-                    <span class="subtitle">find with me</span>
-                    <div class="social-link">
-                        
-                        <a href="https://www.linkedin.com/in/smita-srivastava-740a151b6/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/S-web7272"><i class="fa-brands fa-github"></i></a>
-                        
-                    </div>
+            </div>
+            <ul class="tmp-mainmenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-Us">About</a></li>
+                <li><a href="#resume-section">Experience & Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+            <div class="social-wrapper mt--40">
+                <span class="subtitle">Find with me</span>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/smita-srivastava-740a151b6/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/S-web7272"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <!-- social area end -->
-
-
-
             </div>
         </div>
     </div>
@@ -868,6 +844,15 @@ document.querySelectorAll(".service-card-num").forEach((title) => {
 });
 
 
+    </script>
+    <script>
+        document.querySelector('.open-mobile-menu').addEventListener('click', function () {
+            document.querySelector('.tmp-popup-mobile-menu').classList.add('active');
+        });
+    
+        document.querySelector('.close-button').addEventListener('click', function () {
+            document.querySelector('.tmp-popup-mobile-menu').classList.remove('active');
+        });
     </script>
 </body>
 

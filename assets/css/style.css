@@ -11554,8 +11554,8 @@ header.header-full-width.header--sticky.sticky {
 }
 @media only screen and (max-width: 479px) {
   .tmp-popup-mobile-menu .inner {
-    width: 310px;
-    padding: 10px;
+    width: 390px;
+    padding-left: 114px;
   }
 }
 .tmp-popup-mobile-menu .header-top {
