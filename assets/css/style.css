@@ -12806,7 +12806,7 @@ header.header-full-width.header--sticky.sticky {
 }
 @media only screen and (max-width: 575px) {
   .banner-two-main-wrapper .banner-right-content .main-img .banner-big-text-1 {
-    display: none;
+    /* display: none; */
   }
 }
 @media (min-width: 576px) {
@@ -17912,7 +17912,7 @@ section.clients-testimonial-area {
 }
 @media only screen and (max-width: 575px) {
   .banner-two-main-wrapper .banner-right-content .main-img .banner-big-text-1 {
-    display: none;
+    /* display: none; */
   }
 }
 @media (min-width: 576px) {
